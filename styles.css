@@ -208,8 +208,9 @@ body {
   }
 
   .hero__content {
-    justify-self: center;
-    text-align: center;
+    justify-self: left;
+    margin-left: 2em;
+    text-align: left;
     align-self: center;
   }
 
