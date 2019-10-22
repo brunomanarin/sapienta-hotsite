@@ -289,10 +289,8 @@ body {
   }
 
   .hero__content {
-    width: 100%;
-    justify-self: left;
-    margin-left: 2em;
-    text-align: left;
+    width: 80%;
+    margin: 0 auto;
     align-self: center;
   }
 
