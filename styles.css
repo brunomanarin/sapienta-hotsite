@@ -48,10 +48,10 @@ body {
 .hero__content {
   font-size: 3.5rem;
   font-weight: 600;
-  width: 50%;
+  width: 62rem;
   color: #ffffff;
   justify-self: left;
-  align-self: end;
+  align-self: center;
   position: relative;
 }
 
@@ -170,7 +170,7 @@ body {
 
 .companies__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, min-content));
+  grid-template-columns: repeat(auto-fill, minmax(20rem, min-content));
   justify-content: center;
   justify-items: center;
   align-content: center;
@@ -182,19 +182,29 @@ body {
   text-align: center;
   position: relative;
   width: 100%;
-  height: 20rem;
+  height: 25rem;
   display: grid;
-  grid-template-rows: 12rem;
+  grid-template-rows: 20rem;
   justify-items: center;
   align-content: center;
 }
 
 .companies__item img {
-  max-width: 15rem;
+  max-width: 20rem;
 }
-.companies__image{
-  clip-path: circle(35%);
-  background: white;
+
+.companies__image {
+  clip-path: circle(30%);
+  background: #ffffff;
+  position: relative;
+}
+
+.companies__image img {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.35);
 }
 
 @media only screen and (max-width: 700px) {
@@ -208,6 +218,7 @@ body {
   }
 
   .hero__content {
+    width: 100%;
     justify-self: left;
     margin-left: 2em;
     text-align: left;
@@ -229,17 +240,26 @@ body {
   }
 
   .about {
+    padding-top: 30rem;
+  }
+
+  .companies__title {
+    padding-top: 10rem;
+  }
+
+  .companies__list {
+    padding-top: 5rem;
+    grid-template-columns: repeat(auto-fill, 25rem);
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .about {
     padding-top: 40rem;
   }
-  .about > p{
-    font-size:4rem;
-    text-align:center;
-  }
-  .companies__title{
-    padding-top:15rem;
-  }
-  .companies__list{
-    padding-top: 5rem;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, min-content));
-  }
+}
+
+/* Specific fixes */
+#locus-iuris img {
+  transform: translate(-50%, -50%) scale(0.25);
 }
