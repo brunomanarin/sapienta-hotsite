@@ -218,9 +218,11 @@ body {
   }
 
   .hero__content {
-    justify-self: center;
-    text-align: center;
     width: 100%;
+    justify-self: left;
+    margin-left: 2em;
+    text-align: left;
+    align-self: center;
   }
 
   .hero__content--line {
